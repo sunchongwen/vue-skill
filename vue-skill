@@ -2,3 +2,15 @@
 {{}} 文字时候用
 <el-form v-bind:model="addForm"> 表单用 data=>单项  
 <el-input v-model="addForm.appName"></el-input>  双向绑定 input <=> data数据同步
+2. 父传子
+父组件
+ <order-header title="我的购物车" suibianqiming="????s"></order-header>
+ 
+子组件order-header.vue
+<h2> {{suibianqiming}} </h2>
+export default {
+  name: "order-header",
+  props: {
+    suibianqiming: String
+  },
+};
