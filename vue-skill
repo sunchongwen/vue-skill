@@ -1,0 +1,4 @@
+1.3种数据绑定
+{{}} 文字时候用
+<el-form v-bind:model="addForm"> 表单用 data=>单项  
+<el-input v-model="addForm.appName"></el-input>  双向绑定 input <=> data数据同步
