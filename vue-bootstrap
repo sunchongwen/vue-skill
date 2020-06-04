@@ -1,0 +1,15 @@
+npm install bootstrap jquery popper.js --save
+
+main.js
+import jQuery from 'jquery';
+window.$ = window.jQuery = jQuery;
+import 'popper.js';
+import 'bootstrap';
+import './assets/app.scss';
+
+
+app.scss
+@import '~bootstrap/scss/bootstrap';
+
+.vue
+<button class="btn btn-primary">Click</button>
